@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "cd client && npm install && npm run build"
+    "dev": "cd client && vite",
+    "build": "cd client && npm run build",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
