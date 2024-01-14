@@ -1,0 +1,26 @@
+const gallery = [
+    { img: './resources/Gallery/jpg/item1.jpg' },
+    { img: './resources/Gallery/jpg/item2.jpg' },
+    { img: './resources/Gallery/jpg/item3.jpg' },
+    { img: './resources/Gallery/jpg/item4.jpg' },
+    { img: './resources/Gallery/jpg/item5.jpg' },
+    { img: './resources/Gallery/jpg/item6.jpg' },
+    { img: './resources/Gallery/jpg/item7.jpg' },
+    { img: './resources/Gallery/jpg/item8.jpg' },
+    { img: './resources/Gallery/jpg/item9.jpg' },
+    { img: './resources/Gallery/jpg/item10.jpg' },
+    { img: './resources/Gallery/jpg/item11.jpg' },
+    { img: './resources/Gallery/jpg/item12.jpg' },
+    { img: './resources/Gallery/jpg/item13.jpg' },
+    { img: './resources/Gallery/jpg/item14.jpg' },
+    { img: './resources/Gallery/jpg/item15.jpg' },
+    { img: './resources/Gallery/jpg/item16.jpg' },
+    { img: './resources/Gallery/jpg/item17.jpg' },
+    { img: './resources/Gallery/jpg/item18.jpg' },
+    { img: './resources/Gallery/jpg/item19.jpg' },
+    { img: './resources/Gallery/jpg/item20.jpg' },
+    { img: './resources/Gallery/jpg/item21.jpg' },
+    { img: './resources/Gallery/jpg/item22.jpg' },
+]
+
+export default gallery
