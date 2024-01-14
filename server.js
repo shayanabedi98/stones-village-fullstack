@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 const path = require("path");
 const bodyParser = require("body-parser");
 
@@ -30,6 +30,6 @@ app.get("/inventory", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/dist", "index.html"));
 });
 
-app.use(express.static(path.join(__dirname, "/client/dist")));
+app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
 app.listen(port)

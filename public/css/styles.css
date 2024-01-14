@@ -754,7 +754,7 @@ iframe {
 }
 
 .about-content3-image {
-    background: url('/../resources/gallery/jpg/item22.jpg');
+    background: url('../resources/gallery/jpg/item22.jpg');
     width: 90%;
     height: 600px;
     box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px,
