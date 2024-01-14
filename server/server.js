@@ -22,14 +22,14 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
-app.use(express.static(path.join(__dirname, "/client/dist")));
+app.use(express.static(path.join(__dirname, "../client/dist")));
 
 app.get("/gallery", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
 });
 
 app.get("/inventory", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../client/dist", "index.html"));
 });
 
 app.listen(port)
