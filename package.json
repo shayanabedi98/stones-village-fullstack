@@ -8,7 +8,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "cd client && vite build"
+    "build": "cd client && npm run build",
+    "vite": "vite",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
