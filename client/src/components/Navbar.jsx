@@ -1,4 +1,10 @@
 import React, { useEffect, useState } from "react";
+import logoName from '../../../server/public/resources/sv-name.png'
+import logoCube from '../../../server/public/resources/sv-cube.png'
+import ig from '../../../server/public/resources/iglogo.png'
+import close from '../../../server/public/resources/close-svgrepo-com.png'
+import open from '../../../server/public/resources/align-justify-svgrepo-com.png'
+import phone from '../../../server/public/resources/icons8-phone-100.png'
 
 const Navbar = () => {
   const [clickedMobile, setclickedMobile] = useState(false);
@@ -24,8 +30,8 @@ const Navbar = () => {
   return (
     <div onChange={handleResize} className="navbar">
       <div className="logo">
-        <img onClick={handleRelocate} id="logo-name" src="./resources/sv-name.png" alt="Company name" />
-        <img onClick={handleRelocate} id="logo-cube" src="./resources/sv-cube.png" alt="Company logo" />
+        <img onClick={handleRelocate} id="logo-name" src={logoName} alt="Company name" />
+        <img onClick={handleRelocate} id="logo-cube" src={logoCube} alt="Company logo" />
       </div>
       <div className="navbar-menu">
         <ul>
@@ -55,7 +61,7 @@ const Navbar = () => {
         >
           <img
             onClick={handleClick}
-            src="./resources/align-justify-svgrepo-com.png"
+            src={open}
             alt="Menu Button"
           />
         </div>
@@ -68,7 +74,7 @@ const Navbar = () => {
         >
           <img
             onClick={handleClick}
-            src="./resources/close-svgrepo-com.png"
+            src={close}
             alt="Close menu button"
           />
         </div>
@@ -101,14 +107,14 @@ const Navbar = () => {
           <button id="tel">
             <a href="tel:+14372375062">
               <img
-                src="./resources/icons8-phone-100.png"
+                src={phone}
                 alt="Contact By Number"
               />
             </a>
           </button>
           <button id="instagram">
             <a target="_blank" href="https://www.instagram.com/stonesvillage/">
-              <img src="./resources/iglogo.png" alt="Visit Instagram page" />
+              <img src={ig} alt="Visit Instagram page" />
             </a>
           </button>
         </div>
@@ -117,7 +123,7 @@ const Navbar = () => {
       <div className="navbar-links">
         <button id="instagram">
           <a target="_blank" href="https://www.instagram.com/stonesvillage/">
-            <img src="./resources/iglogo.png" alt="Visit Instagram page" />
+            <img src={ig} alt="Visit Instagram page" />
           </a>
         </button>
       </div>
