@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head.ejs') %>
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+    <div class="contact">
+      <div class="page-banner hidden">
+        <div class="page-banner-overlay">
+          <h1 class="title">Contact</h1>
+        </div>
+      </div>
+      <div class="contact-list hidden">
+        <div class="contact-list-item">
+          <h2 class="contact-name">
+            <img
+              src="./resources/contact-square.png"
+              alt="hollow square symbol to indicate new contact"
+            />Ahmad Abedi
+          </h2>
+          <ul>
+            <li class="contact-info">General Manager</li>
+            <li class="contact-info">
+              <a href="tel:+14372375062">437-237-5062</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-list-item">
+          <h2 class="contact-name">
+            <img
+              src="./resources/contact-square.png"
+              alt="hollow square symbol to indicate new contact"
+            />Ashkan Razzaghi
+          </h2>
+          <ul>
+            <li class="contact-info">Operations Manager</li>
+            <li class="contact-info">
+              <a href="tel:+16478989826">647-898-9826</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-list-item">
+          <h2 class="contact-name">
+            <img
+              src="./resources/contact-square.png"
+              alt="hollow square symbol to indicate new contact"
+            />Arty Abedi
+          </h2>
+          <ul>
+            <li class="contact-info">Assistant Manager</li>
+            <li class="contact-info">
+              <a href="tel:+16478904176">647-890-4176</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact-form-map-container">
+        <div class="contact-form hidden">
+          <h3>Hey there! Let's Talk.</h3>
+          <h4>Send us any questions you have or just say Hello!</h4>
+          <form action="https://formspree.io/f/xdorjoap" method="POST">
+            <input
+              id="input-name"
+              placeholder="Your Name"
+              type="text"
+              name="name"
+              required
+            />
+
+            <input
+              id="input-email"
+              placeholder="Your Email"
+              type="email"
+              name="email"
+              required
+            />
+
+            <textarea
+              placeholder="Your Message"
+              id="input-msg"
+              name="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
+        </div>
+        <div class="contact-map hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.502258648657!2d-79.52831762329814!3d43.803940342667495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2fe60e9cb40b%3A0x2e2e691d0deb630e!2sStones%20Village%20inc.!5e0!3m2!1sen!2sca!4v1698085969811!5m2!1sen!2sca"
+            frameborder="0"
+            width="800"
+            height="400"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+    
+    <script src="/js/index.js"></script>
+    <script src="/js/contact.js"></script>
+  </body>
+</html>

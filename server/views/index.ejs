@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+    <div class="grid-container">
+      <div class="banner1 hidden">
+        <!-- Background Image -->
+      </div>
+      <div class="banner-overlay hidden">
+        <h1>Supply, Design, Fabricate, Install</h1>
+        <p>Elevate Your Space with Stones Village</p>
+        <button>View Inventory</button>
+      </div>
+      <div class="card-title title">Our Process</div>
+      <div class="card-container hidden">
+        <div class="card">
+          <img src="./resources/file.png" alt="Icon of Stone Slab" />
+          <div class="card-text">
+            <p class="card-name">Free Quotation</p>
+            <p class="card-description">
+              Bring Your Vision to Life: Request a free, detailed quote today!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./resources/marble.png" alt="Icon of Stone Slab" />
+          <div class="card-text">
+            <p class="card-name">Supply</p>
+            <p class="card-description">
+              Large Selection: We possess a wide variety of stones that cater to
+              your luxurious desires.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./resources/saw.png" alt="Icon of Stone Slab" />
+          <div class="card-text">
+            <p class="card-name">Fabrication</p>
+            <p class="card-description">
+              Elegance Crafted: Precision fabrication transforms raw stones into
+              exquisite masterpieces.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./resources/hammer2.png" alt="Icon of Stone Slab" />
+          <div class="card-text">
+            <p class="card-name">Installation</p>
+            <p class="card-description">
+              Seamless Excellence: Trust in our precise and careful installation
+              for a flawless stone finish.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="summary-container hidden">
+        <div class="summary-text">
+          <h2 class="title">Who are we?</h2>
+          <p>
+            Stones Village is a renowned supplier, fabricator, and installer of
+            high-quality stones including Granite, Marble, Onyx, Quartz, and
+            Porcelain. Located in the vibrant community of Concord, Ontario, we
+            have years of experience in transforming spaces with our exceptional
+            craftsmanship and dedication to precision. Our expert team is
+            committed to meeting the demands of clients across the country,
+            providing meticulous measurements, seamless installations, and
+            offering free, detailed quotations to kickstart your projects. At
+            Stones Village, we bring your visions to life, ensuring each project
+            is a testament to our mastery and passion for stone craftsmanship.
+          </p>
+        </div>
+        <div class="summary-image">
+          <img
+            src="./resources/inventory/inventory-jpg/Onyx-Shower.jpg"
+            alt="Image of Shower with Onyx slab on wall"
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="example-container hidden">
+        <div class="example-content">
+          <p class="title">Discover Beauty</p>
+          <div class="example-pictures">
+            <img
+              src="./resources/inventory/inventory-jpg/Porcelain-Fireplace.jpg"
+              alt="Image of Porcelain fireplace"
+            />
+            <img
+              src="./resources/inventory/inventory-jpg/Onyx-Island2.jpg"
+              alt="Image of glowing Onyx kitchen island"
+            />
+            <img
+              src="./resources/inventory/inventory-jpg/Porcelain-Fireplace2.jpg"
+              alt="Image of "
+            />
+            <img
+              src="./resources/inventory/inventory-jpg/Marble-Island.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="example-description">
+          <p>
+            Stones Village invites you to our Instagram page, where a portfolio
+            of diverse and transformative projects awaits. Over here, you'll
+            find a showcase of our commitment to excellence in stone
+            craftsmanship. Follow us for a steady stream of inspiration,
+            updates, and a glimpse into the artistry that defines every project.
+            Connect with us on Instagram, so you can start envisioning the
+            possibilities for your own space today!
+          </p>
+          <div class="example-description-btn">
+            <button id="example-instagram">
+              <img src="./resources/Instagram_logo.svg.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/footer.ejs') %>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
