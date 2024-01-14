@@ -32,6 +32,4 @@ app.get("/inventory", (req, res) => {
 
 app.use(express.static(path.join(__dirname, "/client/dist")));
 
-app.listen(port, () => {
-  console.log("Running on Port:", port);
-});
+app.listen(port)
