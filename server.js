@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 const path = require("path");
 const bodyParser = require("body-parser");
 
@@ -22,6 +22,8 @@ app.get("/contact", (req, res) => {
   res.render("contact");
 });
 
+app.use(express.static(path.join(__dirname, "/client/dist")));
+
 app.get("/gallery", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/dist", "index.html"));
 });
@@ -29,7 +31,5 @@ app.get("/gallery", (req, res) => {
 app.get("/inventory", (req, res) => {
   res.sendFile(path.join(__dirname, "/client/dist", "index.html"));
 });
-
-app.use(express.static(path.join(__dirname, "/client/dist")));
 
 app.listen(port)
