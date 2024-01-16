@@ -411,7 +411,7 @@ const inventoryList = [
         {
           id: uuid(),
           name: "",
-          src: "/inventory/quartz/white/SVQ-05.jpg",
+          src: "./inventory/quartz/white/SVQ-05.jpg",
           alt: "",
         },
       ],
@@ -419,7 +419,7 @@ const inventoryList = [
         {
           id: uuid(),
           name: "",
-          src: "/inventory/quartz/grey/SVQ-06.jpg",
+          src: "./inventory/quartz/grey/SVQ-06.jpg",
           alt: "",
         },
       ],
@@ -427,7 +427,7 @@ const inventoryList = [
         {
           id: uuid(),
           name: "",
-          src: "/inventory/quartz/black/SVQ-03.jpg",
+          src: "./inventory/quartz/black/SVQ-03.jpg",
           alt: "",
         },
       ],
