@@ -423,7 +423,7 @@ const inventoryList = [
         {
           id: uuid(),
           name: "",
-          src: "/inventory/quartz/white/SVQ-05.jpg",
+          src: "/inventory/quartz/white/SVQ-055.jpg",
           alt: "",
         },
       ],
