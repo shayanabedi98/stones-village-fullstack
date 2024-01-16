@@ -226,9 +226,11 @@ hr {
   background-repeat: no-repeat;
 }
 
+
+
 .banner1 {
-  background-size: 2540px !important;
-  background-position: 5000px -220px !important;
+  background-size: 2000px !important;
+  background-position: 0 !important;
 }
 
 .banner2 {
@@ -237,13 +239,13 @@ hr {
 }
 
 .banner3 {
-  background-size: 2000px !important;
-  background-position: 0 !important;
+  background-size: 3000px !important;
+  background-position: -700px -500px !important;
 }
 
 .banner4 {
-  background-size: 2960px !important;
-  background-position: -150px -850px !important;
+  background-size: 2430px !important;
+  background-position: -100px -420px !important;
 }
 
 .banner-overlay {
@@ -288,9 +290,9 @@ hr {
 
 .banner-overlay button {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(243, 206, 95);
+  background-color: #e0b739;
   color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: 400;
   border: none;
   border-radius: 3px;
   font-size: 22px;
@@ -302,7 +304,7 @@ hr {
 
 .banner-overlay button:hover {
   box-shadow: 0 0 15px 0 black;
-  background-color: rgb(243, 206, 95);
+  background-color: #202020;
   transition: 0.3s;
 }
 
@@ -326,7 +328,7 @@ hr {
 
 .card-title {
   display: grid;
-  width: 72%;
+  width: 75%;
   height: 20px;
   margin-top: 70px;
 }
@@ -524,9 +526,9 @@ hr {
 
 .review-container button {
   font-family: "Raleway", sans-serif;
-  background-color: rgb(243, 206, 95);
+  background-color: #e0b739;
   color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: 400;
   border: none;
   border-radius: 3px;
   font-size: 22px;
@@ -538,7 +540,7 @@ hr {
 
 .review-container button:hover {
   box-shadow: 0 0 15px 0 black;
-  background-color: rgb(243, 206, 95);
+  background-color: #202020;
   transition: 0.3s;
 }
 

@@ -1,9 +1,9 @@
 const banner = document.querySelector(".banner1");
 const bannerImg = [
-  "/resources/bg11.jpg",
-  "/resources/bg10.jpg",
   "/resources/bg9.jpg",
-  "/resources/bg8.jpg",
+  "/resources/bg10.jpg",
+  "/resources/bg13.jpg",
+  "/resources/bg12.jpg",
 ];
 let bannerImgIndex = 0;
 const logoName = document.querySelector("#logo-name");
