@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: rgb(224, 224, 224);
+  background-color: #e0e0e0;
   color: #000000;
   font-family: "Raleway", sans-serif;
   margin: 0;
@@ -313,7 +313,7 @@ hr {
 
 .title {
   font-weight: 300 !important;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 24px;
 }
 
@@ -322,6 +322,10 @@ hr {
 .card-title,
 .example-container {
   margin: 40px auto;
+}
+
+.example-container {
+  width: 75%;
 }
 
 .card-title {
@@ -402,7 +406,7 @@ hr {
 .example-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 72%;
+  width: 75%;
 }
 
 .example-content {
@@ -471,13 +475,105 @@ hr {
   font-size: 30px;
 }
 
+.review-container {
+  width: 1400px;
+  margin: 70px auto;
+  display: grid;
+  place-items: center;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin: 30px auto;
+  scroll-snap-type: x mandatory;
+  cursor: grab;
+  scroll-behavior: smooth;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px 0px inset;
+  border-radius: 5px;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  flex: 0 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 1000px;
+  scroll-snap-align: start;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px 0px, rgba(0, 0, 0, 0.16) 0px 1px 2px 0px;
+  background-color: #e0e0e0;
+  height: 350px;
+}
+
+.review-text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.review-stars {
+  font-size: 40px;
+}
+
+.review-container button {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(243, 206, 95);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  font-size: 22px;
+  width: 185px;
+  height: 60px;
+  box-shadow: 0 0 2px 0 black;
+  cursor: pointer;
+}
+
+.review-container button:hover {
+  box-shadow: 0 0 15px 0 black;
+  background-color: rgb(243, 206, 95);
+  transition: 0.3s;
+}
+
 footer {
   background-color: rgba(29, 31, 31, 1);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 40px 0;
+  display: grid;
+  place-items: center;
+}
+
+.footer-contact a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin: 30px 10px 0 10px;
+  font-size: 14px;
+}
+
+footer img {
+  height: 30px;
+}
+
+.logo-name {
+  height: 20px;
+  margin: 20px auto 0 auto;
 }
 
 footer .navbar-menu a {
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 footer p {
@@ -803,6 +899,34 @@ iframe {
 }
 
 /* End of About */
+
+.filter {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 30px;
+  width: 700px;
+  margin: 100px auto 30px auto;
+}
+
+.filter button {
+  width: 6rem;
+  height: 2.5rem;
+  margin: auto;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.filter button:hover {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.76) 0px 1px 4px;
+}
+
 .inventory {
   text-align: center;
 }
@@ -829,6 +953,27 @@ iframe {
   transform: scale(1.03);
 }
 
+.back-up {
+  position: sticky;
+  left: 90%;
+  bottom: 100px;
+  height: 90px;
+  width: 90px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: #fedc74;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.back-up img {
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+}
+
 .show-pic {
   position: fixed;
   display: grid;
@@ -837,6 +982,7 @@ iframe {
   width: 100%;
   height: 100%;
   background-color: #000000b4;
+  z-index: 2;
 }
 
 .show-pic img {
