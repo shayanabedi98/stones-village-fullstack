@@ -420,6 +420,12 @@ const inventoryList = [
           src: "/inventory/quartz/white/SVQ-05.jpg",
           alt: "",
         },
+        {
+          id: uuid(),
+          name: "",
+          src: "/inventory/quartz/white/SVQ-05.jpg",
+          alt: "",
+        },
       ],
       grey: [
         {
