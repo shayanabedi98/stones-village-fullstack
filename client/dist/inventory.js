@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 
-// 0 = onyx, 1 = porcelain, 2 = marble, 3 = marble
+// 0 = onyx, 1 = porcelain, 2 = marble, 3 = quartz
 
 const inventoryList = [
   {
