@@ -5,6 +5,7 @@ const Quartz = ({ inventoryList, handleClick }) => {
     <div className="quartz inventory-container">
       {inventoryList[3].quartz.white.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -17,6 +18,7 @@ const Quartz = ({ inventoryList, handleClick }) => {
 
       {inventoryList[3].quartz.grey.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -29,6 +31,7 @@ const Quartz = ({ inventoryList, handleClick }) => {
 
       {inventoryList[3].quartz.black.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{

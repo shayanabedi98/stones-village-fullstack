@@ -5,6 +5,7 @@ const Onyx = ({ inventoryList, handleClick }) => {
     <div className="onyx inventory-container">
       {inventoryList[0].onyx.brown.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -17,6 +18,7 @@ const Onyx = ({ inventoryList, handleClick }) => {
 
       {inventoryList[0].onyx.green.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -29,6 +31,7 @@ const Onyx = ({ inventoryList, handleClick }) => {
 
       {inventoryList[0].onyx.white.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -41,6 +44,7 @@ const Onyx = ({ inventoryList, handleClick }) => {
 
       {inventoryList[0].onyx.red.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -53,6 +57,7 @@ const Onyx = ({ inventoryList, handleClick }) => {
 
       {inventoryList[0].onyx.other.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{

@@ -5,6 +5,7 @@ const Marble = ({ inventoryList, handleClick }) => {
     <div className="marble inventory-container">
       {inventoryList[2].marble.white.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -17,6 +18,7 @@ const Marble = ({ inventoryList, handleClick }) => {
 
       {inventoryList[2].marble.grey.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{

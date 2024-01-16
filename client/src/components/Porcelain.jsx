@@ -5,6 +5,7 @@ const Porcelain = ({ inventoryList, handleClick }) => {
     <div className="porcelain inventory-container">
       {inventoryList[1].porcelain.white.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
@@ -16,6 +17,7 @@ const Porcelain = ({ inventoryList, handleClick }) => {
       ))}
       {inventoryList[1].porcelain.dark.map((item) => (
         <div
+          key={item.id}
           onClick={() => handleClick(item.src)}
           className="inventory-item"
           style={{
