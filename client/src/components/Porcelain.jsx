@@ -6,8 +6,9 @@ const Porcelain = ({ inventoryList, handleClick }) => {
       {inventoryList[1].porcelain.white.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",
@@ -18,8 +19,9 @@ const Porcelain = ({ inventoryList, handleClick }) => {
       {inventoryList[1].porcelain.dark.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",

@@ -6,7 +6,9 @@ const Marble = ({ inventoryList, handleClick }) => {
       {inventoryList[2].marble.white.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }
           className="inventory-item"
           style={{
             background: `url(${item.src})`,
@@ -19,8 +21,9 @@ const Marble = ({ inventoryList, handleClick }) => {
       {inventoryList[2].marble.grey.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",

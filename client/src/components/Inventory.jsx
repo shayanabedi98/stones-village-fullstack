@@ -8,11 +8,13 @@ import Quartz from "./Quartz";
 import Filter from "./Filter";
 import inventoryList from "../../public/inventory";
 import upArrow from "../../public/up.png";
+import { name } from "ejs";
 
 const Inventory = () => {
   const [show, setShow] = useState(false);
+  const [showPic, setShowPic] = useState(false)
   const [windowY, setWindowY] = useState(window.scrollY);
-  const [img, setImg] = useState("");
+  const [info, setInfo] = useState("");
   const [filter, setFilter] = useState({
     onyx: false,
     porcelain: false,
@@ -29,10 +31,14 @@ const Inventory = () => {
     window.addEventListener("scroll", handleScroll);
   });
 
-  const handleClick = (src) => {
+  const handleClick = (obj) => {
     setShow(true);
-    setImg(src);
+    setInfo(obj);
   };
+
+  const handleShowPic = () => {
+    setShowPic(true)
+  }
 
   const handleFilter = (clicked) => {
     setFilter({
@@ -108,8 +114,33 @@ const Inventory = () => {
       )}
 
       {show && (
-        <div onClick={() => setShow(false)} className="show-pic">
-          <img src={img} />
+        <div className="show-pic">
+          <div className="show-pic-card">
+            <img src={info.src} onClick={handleShowPic} />
+            <div className="show-pic-card-info">
+              <p className="show-pic-card-info-tel">
+                For more information about this stone, give us a call at <a href="tel:+14372375062">437-237-5062</a>.
+              </p>
+              <p>
+                <span>Name:</span> {info.name}
+              </p>
+              <p>
+                <span>Type:</span> {info.type}
+              </p>
+              <p>
+                <span>Dimensions:</span> 0 x 0 x 0
+              </p>
+              <button className="close-show-pic" onClick={() => setShow(false)}>
+              Close
+            </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      { showPic && (
+        <div className="show-pic show-only-pic">
+          <img src={info.src} onClick={() => setShowPic(false)} />
         </div>
       )}
 

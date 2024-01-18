@@ -6,8 +6,9 @@ const Onyx = ({ inventoryList, handleClick }) => {
       {inventoryList[0].onyx.brown.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",
@@ -19,8 +20,9 @@ const Onyx = ({ inventoryList, handleClick }) => {
       {inventoryList[0].onyx.green.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",
@@ -32,8 +34,9 @@ const Onyx = ({ inventoryList, handleClick }) => {
       {inventoryList[0].onyx.white.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",
@@ -45,8 +48,9 @@ const Onyx = ({ inventoryList, handleClick }) => {
       {inventoryList[0].onyx.red.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",
@@ -58,8 +62,9 @@ const Onyx = ({ inventoryList, handleClick }) => {
       {inventoryList[0].onyx.other.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
-          className="inventory-item"
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }          className="inventory-item"
           style={{
             background: `url(${item.src})`,
             backgroundSize: "750px",

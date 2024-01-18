@@ -6,7 +6,9 @@ const Quartz = ({ inventoryList, handleClick }) => {
       {inventoryList[3].quartz.white.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }
           className="inventory-item"
           style={{
             background: `url(${item.src})`,
@@ -19,7 +21,9 @@ const Quartz = ({ inventoryList, handleClick }) => {
       {inventoryList[3].quartz.grey.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }
           className="inventory-item"
           style={{
             background: `url(${item.src})`,
@@ -32,7 +36,9 @@ const Quartz = ({ inventoryList, handleClick }) => {
       {inventoryList[3].quartz.black.map((item) => (
         <div
           key={item.id}
-          onClick={() => handleClick(item.src)}
+          onClick={() =>
+            handleClick({ src: item.src, name: item.name, type: item.type })
+          }
           className="inventory-item"
           style={{
             background: `url(${item.src})`,
