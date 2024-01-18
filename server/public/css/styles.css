@@ -1015,8 +1015,8 @@ iframe {
   height: 300px;
   object-fit: contain;
   cursor: pointer;
-  border-radius: 3px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .show-pic-card-info {
