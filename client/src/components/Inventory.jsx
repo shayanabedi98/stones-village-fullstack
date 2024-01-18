@@ -8,7 +8,7 @@ import Quartz from "./Quartz";
 import Filter from "./Filter";
 import inventoryList from "../../public/inventory";
 import upArrow from "../../public/up.png";
-import { name } from "ejs";
+import close from '../../public/close-svgrepo-com.png'
 
 const Inventory = () => {
   const [show, setShow] = useState(false);
@@ -131,7 +131,7 @@ const Inventory = () => {
                 <span>Dimensions:</span> 0 x 0 x 0
               </p>
               <button className="close-show-pic" onClick={() => setShow(false)}>
-              Close
+              <img src={close} />
             </button>
             </div>
           </div>
@@ -139,8 +139,8 @@ const Inventory = () => {
       )}
 
       { showPic && (
-        <div className="show-pic show-only-pic">
-          <img src={info.src} onClick={() => setShowPic(false)} />
+        <div onClick={() => setShowPic(false)} className="show-pic show-only-pic">
+          <img src={info.src}  />
         </div>
       )}
 
