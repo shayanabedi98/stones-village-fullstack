@@ -119,7 +119,7 @@ const Inventory = () => {
             <img src={info.src} onClick={handleShowPic} />
             <div className="show-pic-card-info">
               <p className="show-pic-card-info-tel">
-                For more information about this stone, give us a call at <a href="tel:+14372375062">437-237-5062</a>.
+                <span>For more information about this stone, give us a call at <a href="tel:+14372375062">437-237-5062</a>.</span>
               </p>
               <p>
                 <span>Name:</span> {info.name}
@@ -148,7 +148,7 @@ const Inventory = () => {
         <button
           className="back-up"
           onClick={() =>
-            setWindowY(window.scrollTo({ top: 200, behavior: "smooth" }))
+            setWindowY(window.scrollTo({ top: 300, behavior: "smooth" }))
           }
         >
           <img src={upArrow} alt="" />
