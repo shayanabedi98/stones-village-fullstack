@@ -336,6 +336,13 @@
   iframe {
     width: 845px;
   }
+
+  /* Inventory */
+
+  .show-only-pic img {
+    width: 95%;
+  }
+  
 }
 
 @media (max-width: 900px) {
@@ -804,6 +811,13 @@
     font-size: 26px;
   }
 
+  /* Inventory */
+
+  .show-pic-card {
+    width: 310px;
+    height: 460px;
+  }
+
   /* About */
 
   .about-content2 {
@@ -920,5 +934,11 @@
 
   .filter {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .show-pic-card {
+    width: 290px;
+    padding: 10px;
+    height: 460px;
   }
 }

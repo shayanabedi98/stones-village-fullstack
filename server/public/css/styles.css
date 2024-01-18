@@ -914,9 +914,11 @@ iframe {
   margin: 100px auto 30px auto;
 }
 
-.filter button {
+.filter button, .close-show-pic {
   width: 6rem;
   height: 2.5rem;
+  padding: 0;
+  color: #202020;
   margin: auto;
   border: none;
   border-radius: 2px;
@@ -983,6 +985,7 @@ iframe {
 .show-pic {
   position: fixed;
   display: grid;
+  grid-template-rows: 1fr;
   place-items: center;
   top: 0;
   width: 100%;
@@ -991,9 +994,56 @@ iframe {
   z-index: 2;
 }
 
-.show-pic img {
-  width: 50%;
+.show-pic-card {
+  width: 450px;
+  padding: 20px 20px;
+  height: 550px;
+  background-color: #202020;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.2) 0px 3px 7px -3px;
+  display: grid;
+  border-radius: 5px;
+  grid-template-rows: 1fr 0.1fr;
+}
+
+.show-only-pic img {
+  width: 1020px;
+  cursor: pointer;
+}
+
+.show-pic-card img {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.show-pic-card-info {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.show-pic-card-info-tel {
+  text-align: center;
   margin: 0 auto;
+  width: 85%;
+  font-family: "Roboto", sans-serif;
+}
+
+.show-pic-card p {
+  color: #e0e0e0;
+}
+
+.show-pic-card a {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+.show-pic-card p span {
+  color: #e0b739;
+  font-size: 18px;
+}
+
+.close-show-pic {
 }
 
 /* End of Inventory */
